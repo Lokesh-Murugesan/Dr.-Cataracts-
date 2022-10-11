@@ -1,4 +1,4 @@
-# Dr.-Cataracts-
+# Dr.Cataracts
 An Image Processing project developed using a pre-trained VGG-19 Deep Convolutional Neural Network model. The objective is to classify whether the eyeball has cataract or not with the help of eye fundus images.
 
 ### ABSTRACT:
