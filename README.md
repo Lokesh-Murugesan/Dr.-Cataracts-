@@ -21,7 +21,6 @@ Ocular Disease Intelligent Recognition (ODIR) is a structured ophthalmic databas
 The implementation methodology begins from a collection of good image dataset for both the classes namely cataract and normal eye. Image preprocessing is done involving 2 steps, resizing the images to a specific size and cropping the image borders. Due to a very high fluctuation in the size of images, all images need to be downsized to a common size of width 50 pixels and height 50 pixels. A model or a binary classifier is created in order to make predictions. This model is trained by feeding a training dataset to the model. The model is supposed to predict whether the image belongs to class cataract or non-cataract. The images of the data set used for testing is not the same as that used for training as the model may memorize the unimportant features of the training images. This issue is known as over fitting, and to avoid it we keep a portion of our dataset out of the training procedure. After the testing phase, the model is ready to predict for new images.
 
 ### SAMPLE OUTPUT:
-![image](https://user-images.githubusercontent.com/79091565/195018410-644bfab8-e4e8-49bd-b2c3-103054e10a26.png)
 
 ![image](https://user-images.githubusercontent.com/79091565/195018458-cbd6cfd8-3a29-468e-ae06-01b8b08fd816.png)
 
