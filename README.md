@@ -13,9 +13,20 @@ Ocular Disease Intelligent Recognition (ODIR) is a structured ophthalmic databas
 •	Age related Macular Degeneration (A),
 •	Hypertension (H),
 •	Pathological Myopia (M),
-•	Other diseases/abnormalities (O)
+•	Other diseases/abnormalities (O).
 ![image](https://user-images.githubusercontent.com/79091565/195017913-13275b4e-826d-4b77-bd2c-211894bc32b2.png)
 
 ### WORKFLOW:
 The implementation methodology begins from a collection of good image dataset for both the classes namely cataract and normal eye. Image preprocessing is done involving 2 steps, resizing the images to a specific size and cropping the image borders. Due to a very high fluctuation in the size of images, all images need to be downsized to a common size of width 50 pixels and height 50 pixels. A model or a binary classifier is created in order to make predictions. This model is trained by feeding a training dataset to the model. The model is supposed to predict whether the image belongs to class cataract or non-cataract. The images of the data set used for testing is not the same as that used for training as the model may memorize the unimportant features of the training images. This issue is known as over fitting, and to avoid it we keep a portion of our dataset out of the training procedure. After the testing phase, the model is ready to predict for new images.
  
+![image](https://user-images.githubusercontent.com/79091565/195018240-afe79f65-fd2b-4fd6-9b93-aec0f5162d8a.png)
+
+### SAMPLE OUTPUT:
+![image](https://user-images.githubusercontent.com/79091565/195018410-644bfab8-e4e8-49bd-b2c3-103054e10a26.png)
+
+![image](https://user-images.githubusercontent.com/79091565/195018458-cbd6cfd8-3a29-468e-ae06-01b8b08fd816.png)
+
+### RESULTS AND INTERPRETATIONS:
+![image](https://user-images.githubusercontent.com/79091565/195018550-a2469b65-655b-49f4-a97c-2dd42fdb9215.png)
+
+From the above classification report, we can infer that the VGG-19 model is performed well with the accuracy of 0.99. The precision, recall and f1-score are also having better values.
